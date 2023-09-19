@@ -1,0 +1,95 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1c1c1c;
+}
+
+/* Estilos para as tabelas */
+
+.tabela-titulo {
+  border-collapse: separate;
+  width: 90%;
+  margin: 20px auto;
+  border: 5px solid #00ff7f;
+
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    border-color: #33ff55;
+  }
+  50% {
+    border-color: #00ffae;
+    transform: scale(1.05);
+  }
+  100% {
+    border-color: #33ff6d;
+  }
+}
+
+.tabela-titulo th,
+.tabela-titulo td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+}
+
+.tabela-titulo th {
+  background-color: #3cb371;
+}
+
+.tabela-titulo td {
+  background-color: #f2f2f2;
+}
+
+.tabela {
+  border-collapse: separate;
+  width: 80%;
+  margin: 20px auto;
+  border: 5px solid #00ff7f;
+}
+
+.tabela th,
+.tabela td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+.tabela th {
+  background-color: #3cb371;
+}
+
+.tabela tr {
+  background-color: #f2f2f2;
+}
+
+.tabela tr:hover {
+  background-color: #00ff7f;
+}
+
+#th-especial,
+#th-especial2,
+#th-especial3,
+#th-especial4 {
+  text-align: center;
+  font-size: 2rem;
+   animation: blink 1.3s infinite;
+}
+
+@keyframes blink {
+  0% {
+    color: #000; /* Cor inicial */
+  }
+  50% {
+    color: white; /* Cor piscando */
+  }
+  100% {
+    color: #000; /* Cor final */
+  }
+}
